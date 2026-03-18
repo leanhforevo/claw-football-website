@@ -3,278 +3,240 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Claw Football - Cổng tin bóng đá hiện đại với tin nóng, lịch đấu, bảng xếp hạng và phân tích chuyên sâu." />
-  <title>Claw Football | Tin tức bóng đá hiện đại</title>
+  <title>Football Hub | Tin tức, lịch thi đấu, bảng xếp hạng</title>
+  <meta name="description" content="Website bóng đá hiện đại với tin nóng, lịch thi đấu, bảng xếp hạng và câu lạc bộ nổi bật." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="topbar container">
-        <a class="brand" href="#">
-          <span class="brand-mark">⚽</span>
-          <span class="brand-text">Claw<span>Football</span></span>
-        </a>
-        <div class="header-actions">
-          <label class="search-box">
-            <span>⌕</span>
-            <input type="text" placeholder="Tìm tin tức, đội bóng, giải đấu..." />
-          </label>
-          <button class="lang-chip">VI / EN</button>
-          <button class="theme-btn" id="themeToggle" aria-label="Đổi giao diện">☾</button>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <nav class="nav container">
+      <a class="brand" href="#top">⚽ Football Hub</a>
+      <div class="nav-links">
+        <a href="#news">Tin tức</a>
+        <a href="#matches">Lịch đấu</a>
+        <a href="#table">BXH</a>
+        <a href="#clubs">CLB</a>
+        <a href="#contact" class="btn btn-small">Liên hệ</a>
+      </div>
+    </nav>
+
+    <div class="container hero-grid" id="top">
+      <div class="hero-copy">
+        <span class="eyebrow">Cập nhật nhanh • Giao diện hiện đại</span>
+        <h1>Web bóng đá đậm chất thể thao, nổi bật và sẵn sàng chạy ngay.</h1>
+        <p>
+          Theo dõi tin nóng, lịch thi đấu, bảng xếp hạng và những đội bóng đáng chú ý
+          trong một giao diện mạnh mẽ, gọn gàng và tối ưu cho cả desktop lẫn mobile.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#matches" class="btn">Xem lịch thi đấu</a>
+          <a href="#news" class="btn btn-ghost">Tin mới nhất</a>
+        </div>
+
+        <div class="stats">
+          <div>
+            <strong>24/7</strong>
+            <span>Cập nhật liên tục</span>
+          </div>
+          <div>
+            <strong>50+</strong>
+            <span>CLB nổi bật</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Responsive</span>
+          </div>
         </div>
       </div>
-      <nav class="navbar container">
-        <a href="#hero">Trang chủ</a>
-        <a href="#headline">Tin nóng</a>
-        <a href="#news-grid">Chuyên mục</a>
-        <a href="#data-board">Data board</a>
-        <a href="#fixtures">Lịch đấu</a>
-        <a href="#standings">BXH</a>
-      </nav>
-    </header>
 
-    <main class="container main-layout">
-      <section class="content-column">
-        <section class="hero-panel" id="hero">
-          <div class="hero-copy">
-            <span class="section-pill live-pill">● Live football portal</span>
-            <h1>Web bóng đá của bạn giờ mang dáng dấp một cổng tin thể thao thật sự.</h1>
-            <p>
-              Giao diện tối hiện đại, bố cục kiểu news portal, nổi bật tin nóng, lịch thi đấu,
-              bảng xếp hạng và khu vực dữ liệu trực quan như một web bóng đá chuyên nghiệp.
-            </p>
-            <div class="hero-actions">
-              <a href="#headline" class="primary-btn">Xem tin nổi bật</a>
-              <a href="#data-board" class="ghost-btn">Mở data board</a>
-            </div>
+      <div class="hero-panel card">
+        <div class="score-card">
+          <div class="score-top">
+            <span>Trận cầu tâm điểm</span>
+            <span class="live">LIVE</span>
           </div>
-          <div class="hero-score card-glass">
-            <div class="score-header">
-              <span class="league-tag">Premier League</span>
-              <span class="match-status">LIVE 82'</span>
-            </div>
-            <div class="score-main">
-              <div class="club-box">
-                <div class="club-badge blue">MCI</div>
-                <strong>Manchester City</strong>
-              </div>
-              <div class="score-value">3<span>:</span>1</div>
-              <div class="club-box right">
-                <div class="club-badge red">ARS</div>
-                <strong>Arsenal</strong>
-              </div>
-            </div>
-            <div class="score-stats">
-              <div><span>Shots</span><strong>14 - 8</strong></div>
-              <div><span>Possession</span><strong>61% - 39%</strong></div>
-              <div><span>xG</span><strong>2.46 - 0.93</strong></div>
-            </div>
-          </div>
-        </section>
 
-        <section class="headline-grid" id="headline">
-          <article class="headline-card featured-news card-glass">
-            <span class="section-pill">Tin nổi bật</span>
-            <h2>Cuộc đua vô địch châu Âu nóng rực khi các ông lớn đồng loạt tăng tốc</h2>
-            <p>
-              Từ Premier League đến La Liga, các đội top đầu đang bước vào giai đoạn bản lề,
-              nơi một chiến thắng có thể thay đổi toàn bộ cục diện mùa giải.
-            </p>
-            <div class="headline-meta">
-              <span>Phân tích chiến thuật</span>
-              <span>7 phút đọc</span>
-            </div>
-          </article>
-          <article class="mini-news card-glass">
-            <span class="section-pill amber">Chuyển nhượng</span>
-            <h3>3 tiền đạo đang được săn đón mạnh nhất mùa hè</h3>
-            <p>Các CLB lớn bắt đầu vào cuộc sớm để giành lợi thế trên thị trường.</p>
-          </article>
-          <article class="mini-news card-glass">
-            <span class="section-pill violet">Champions League</span>
-            <h3>Những cặp đấu có thể tạo địa chấn ở vòng knock-out</h3>
-            <p>Không chỉ phong độ, chiều sâu đội hình đang trở thành yếu tố quyết định.</p>
-          </article>
-        </section>
+          <div class="league-bar">
+            <span>UEFA Champions League</span>
+            <span>Phút 78</span>
+          </div>
 
-        <section class="news-section" id="news-grid">
-          <div class="section-heading">
-            <div>
-              <span class="section-pill">Chuyên mục</span>
-              <h2>Tin tức & phân tích</h2>
+          <div class="teams">
+            <div class="team">
+              <div class="badge sky">MCI</div>
+              <span>Manchester City</span>
             </div>
-            <a href="#" class="text-link">Xem tất cả →</a>
+            <div class="score">3 - 1</div>
+            <div class="team team-right">
+              <div class="badge red">LIV</div>
+              <span>Liverpool</span>
+            </div>
           </div>
-          <div class="news-grid portal-grid">
-            <article class="news-card card-glass">
-              <div class="news-thumb gradient-one"></div>
-              <span class="category-chip">Premier League</span>
-              <h3>Vì sao pressing tầm cao trở lại mạnh mẽ ở các đội top đầu?</h3>
-              <p>Khả năng đoạt bóng sớm giúp tăng chất lượng cơ hội và bóp nghẹt đối thủ từ tuyến đầu.</p>
-            </article>
-            <article class="news-card card-glass">
-              <div class="news-thumb gradient-two"></div>
-              <span class="category-chip">La Liga</span>
-              <h3>Real Madrid đang tái cấu trúc lối chơi quanh tốc độ và không gian</h3>
-              <p>Một bộ khung trẻ trung giúp đội bóng hoàng gia chuyển mình linh hoạt hơn.</p>
-            </article>
-            <article class="news-card card-glass">
-              <div class="news-thumb gradient-three"></div>
-              <span class="category-chip">Serie A</span>
-              <h3>Serie A đang hồi sinh nhờ chiến thuật hiện đại và nhịp độ nhanh hơn</h3>
-              <p>Giải đấu trở nên hấp dẫn hơn khi các đội dần rũ bỏ hình ảnh quá thực dụng.</p>
-            </article>
-            <article class="news-card card-glass">
-              <div class="news-thumb gradient-four"></div>
-              <span class="category-chip">Bundesliga</span>
-              <h3>Bayern và Dortmund lại tạo ra một màn rượt đuổi kinh điển</h3>
-              <p>Tốc độ, khoảng trống và những pha chuyển trạng thái khiến trận đấu cực kỳ bùng nổ.</p>
-            </article>
-          </div>
-        </section>
 
-        <section class="data-board" id="data-board">
-          <div class="section-heading">
-            <div>
-              <span class="section-pill green">Data board</span>
-              <h2>Góc dữ liệu trực quan</h2>
-            </div>
-          </div>
-          <div class="data-grid">
-            <div class="metric-card card-glass">
-              <span>Top Scorer</span>
-              <strong>Haaland</strong>
-              <small>23 bàn thắng</small>
-            </div>
-            <div class="metric-card card-glass">
-              <span>Top Assist</span>
-              <strong>De Bruyne</strong>
-              <small>14 kiến tạo</small>
-            </div>
-            <div class="metric-card card-glass">
-              <span>Clean Sheets</span>
-              <strong>Alisson</strong>
-              <small>12 trận sạch lưới</small>
-            </div>
-            <div class="metric-card card-glass">
-              <span>Form tốt nhất</span>
-              <strong>W-W-W-D-W</strong>
-              <small>Arsenal</small>
-            </div>
-          </div>
-        </section>
-
-        <section class="fixtures-section" id="fixtures">
-          <div class="section-heading">
-            <div>
-              <span class="section-pill blue">Lịch thi đấu</span>
-              <h2>Trận cầu đáng xem</h2>
-            </div>
-          </div>
-          <div class="fixture-list">
-            <div class="fixture-row card-glass">
-              <div>
-                <strong>Barcelona vs Atlético Madrid</strong>
-                <p>La Liga • 20:00 • Camp Nou</p>
-              </div>
-              <span class="match-chip">Đỉnh cao</span>
-            </div>
-            <div class="fixture-row card-glass">
-              <div>
-                <strong>Liverpool vs Tottenham</strong>
-                <p>Premier League • 22:30 • Anfield</p>
-              </div>
-              <span class="match-chip">Top 4 battle</span>
-            </div>
-            <div class="fixture-row card-glass">
-              <div>
-                <strong>Inter vs Juventus</strong>
-                <p>Serie A • 01:45 • San Siro</p>
-              </div>
-              <span class="match-chip">Derby</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="standings-section" id="standings">
-          <div class="section-heading">
-            <div>
-              <span class="section-pill red">Bảng xếp hạng</span>
-              <h2>Top đầu hiện tại</h2>
-            </div>
-          </div>
-          <div class="table-shell card-glass">
-            <table>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Đội</th>
-                  <th>Trận</th>
-                  <th>HS</th>
-                  <th>Điểm</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>1</td><td>Manchester City</td><td>28</td><td>+36</td><td>65</td></tr>
-                <tr><td>2</td><td>Arsenal</td><td>28</td><td>+32</td><td>64</td></tr>
-                <tr><td>3</td><td>Liverpool</td><td>28</td><td>+30</td><td>63</td></tr>
-                <tr><td>4</td><td>Aston Villa</td><td>28</td><td>+18</td><td>55</td></tr>
-                <tr><td>5</td><td>Tottenham</td><td>28</td><td>+15</td><td>53</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-      </section>
-
-      <aside class="sidebar-column">
-        <div class="sidebar-card card-glass">
-          <div class="sidebar-title-row">
-            <h3>Trending</h3>
-            <span class="dot-live">●</span>
-          </div>
-          <ul class="trending-list">
-            <li>
-              <strong>Mbappé</strong>
-              <span>Tương lai vẫn là chủ đề nóng nhất tuần</span>
-            </li>
-            <li>
-              <strong>El Clásico</strong>
-              <span>Lượt xem dự báo tăng mạnh trước giờ bóng lăn</span>
-            </li>
-            <li>
-              <strong>Champions League</strong>
-              <span>Các cặp đấu knock-out hút lượng tìm kiếm lớn</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="sidebar-card card-glass">
-          <h3>Giải đấu nổi bật</h3>
-          <div class="league-stack">
-            <div class="league-row premier"><span>Premier League</span><strong>12 bài mới</strong></div>
-            <div class="league-row laliga"><span>La Liga</span><strong>9 bài mới</strong></div>
-            <div class="league-row bundes"><span>Bundesliga</span><strong>7 bài mới</strong></div>
-            <div class="league-row ucl"><span>Champions League</span><strong>6 bài mới</strong></div>
+          <div class="match-meta">
+            <span>Số cú sút: 14 - 9</span>
+            <span>Kiểm soát bóng: 58% - 42%</span>
           </div>
         </div>
 
-        <div class="sidebar-card card-glass sticky-card">
-          <h3>Quick stats</h3>
-          <div class="quick-stats">
-            <div><span>Tin hôm nay</span><strong>24</strong></div>
-            <div><span>Trận trực tiếp</span><strong>08</strong></div>
-            <div><span>Đội theo dõi</span><strong>32</strong></div>
-          </div>
-          <a href="mailto:hello@clawfootball.site" class="primary-btn full-btn">Liên hệ hợp tác</a>
+        <div class="ticker">
+          <span>🔥 Tin nhanh:</span>
+          <marquee behavior="scroll" direction="left">Cuộc đua vô địch đang nóng lên • Lịch siêu kinh điển cuối tuần đã sẵn sàng • Nhiều thương vụ chuyển nhượng đáng chú ý trước mùa hè</marquee>
         </div>
-      </aside>
-    </main>
-  </div>
+      </div>
+    </div>
+  </header>
 
-  <script src="script.js"></script>
+  <main>
+    <section class="section container" id="news">
+      <div class="section-head">
+        <span class="tag">Tin nổi bật</span>
+        <h2>Tin bóng đá mới nhất</h2>
+        <p>Những nội dung nổi bật dành cho fan bóng đá: chuyển nhượng, chiến thuật và cuộc đua vô địch.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="card news-card featured">
+          <span class="card-tag">Nổi bật</span>
+          <h3>Cuộc đua vô địch trở nên nghẹt thở sau vòng đấu cuối tuần</h3>
+          <p>Khoảng cách top đầu bị thu hẹp đáng kể sau loạt trận giàu kịch tính, khiến cuộc đua vô địch hấp dẫn hơn bao giờ hết.</p>
+          <a href="#">Đọc tiếp →</a>
+        </article>
+
+        <article class="card news-card">
+          <span class="card-tag">Chuyển nhượng</span>
+          <h3>5 ngôi sao có thể khuấy đảo kỳ chuyển nhượng hè</h3>
+          <p>Từ tiền đạo tốc độ đến tiền vệ sáng tạo, thị trường mùa hè đang hứa hẹn cực kỳ sôi động.</p>
+          <a href="#">Xem chi tiết →</a>
+        </article>
+
+        <article class="card news-card">
+          <span class="card-tag">Phân tích</span>
+          <h3>Pressing tầm cao đang trở lại mạnh mẽ ở bóng đá châu Âu</h3>
+          <p>Các HLV hiện đại đang tận dụng cường độ và sự linh hoạt chiến thuật để kiểm soát thế trận tốt hơn.</p>
+          <a href="#">Khám phá →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="matches">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">Lịch thi đấu</span>
+          <h2>Những trận đáng xem sắp tới</h2>
+          <p>Tổng hợp các cặp đấu hấp dẫn từ những giải hàng đầu châu Âu.</p>
+        </div>
+
+        <div class="match-list">
+          <div class="match-row card">
+            <div>
+              <strong>Arsenal</strong> vs <strong>Chelsea</strong>
+              <p>Ngoại hạng Anh • 20:00 • Chủ nhật</p>
+            </div>
+            <span class="pill">Sắp diễn ra</span>
+          </div>
+
+          <div class="match-row card">
+            <div>
+              <strong>Real Madrid</strong> vs <strong>Barcelona</strong>
+              <p>La Liga • 22:30 • Chủ nhật</p>
+            </div>
+            <span class="pill hot">Siêu kinh điển</span>
+          </div>
+
+          <div class="match-row card">
+            <div>
+              <strong>Bayern Munich</strong> vs <strong>Dortmund</strong>
+              <p>Bundesliga • 01:00 • Thứ hai</p>
+            </div>
+            <span class="pill">Der Klassiker</span>
+          </div>
+
+          <div class="match-row card">
+            <div>
+              <strong>Inter Milan</strong> vs <strong>Juventus</strong>
+              <p>Serie A • 02:45 • Thứ hai</p>
+            </div>
+            <span class="pill">Đại chiến Ý</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="table">
+      <div class="section-head">
+        <span class="tag">Bảng xếp hạng</span>
+        <h2>Top 5 đội dẫn đầu</h2>
+        <p>Bảng xếp hạng mẫu cho giao diện tin tức bóng đá chuyên nghiệp.</p>
+      </div>
+
+      <div class="card table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Hạng</th>
+              <th>Đội</th>
+              <th>Trận</th>
+              <th>Hiệu số</th>
+              <th>Điểm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Arsenal</td><td>28</td><td>+34</td><td>64</td></tr>
+            <tr><td>2</td><td>Liverpool</td><td>28</td><td>+31</td><td>63</td></tr>
+            <tr><td>3</td><td>Manchester City</td><td>28</td><td>+29</td><td>62</td></tr>
+            <tr><td>4</td><td>Aston Villa</td><td>28</td><td>+17</td><td>55</td></tr>
+            <tr><td>5</td><td>Tottenham Hotspur</td><td>28</td><td>+14</td><td>53</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="clubs">
+      <div class="container">
+        <div class="section-head">
+          <span class="tag">Câu lạc bộ</span>
+          <h2>Các đội bóng nổi bật</h2>
+          <p>Một vài câu lạc bộ biểu tượng với màu sắc mạnh và dấu ấn riêng.</p>
+        </div>
+
+        <div class="club-grid">
+          <article class="card club-card">
+            <div class="club-logo green">ARS</div>
+            <h3>Arsenal</h3>
+            <p>Lối chơi kiểm soát bóng hiện đại cùng dàn cầu thủ trẻ giàu tốc độ và kỹ thuật.</p>
+          </article>
+
+          <article class="card club-card">
+            <div class="club-logo blue">RMA</div>
+            <h3>Real Madrid</h3>
+            <p>Biểu tượng chiến thắng của bóng đá châu Âu với DNA bản lĩnh ở các trận lớn.</p>
+          </article>
+
+          <article class="card club-card">
+            <div class="club-logo red">MUN</div>
+            <h3>Manchester United</h3>
+            <p>Một trong những CLB giàu truyền thống và sở hữu lượng người hâm mộ khổng lồ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="cta card">
+        <div>
+          <span class="tag">Liên hệ</span>
+          <h2>Bạn muốn phát triển web bóng đá riêng?</h2>
+          <p>Website này có thể mở rộng thêm live score, trang tin riêng, chuyên mục video, admin quản trị hoặc kết nối API dữ liệu bóng đá.</p>
+        </div>
+        <a href="mailto:hello@footballhub.vn" class="btn">Liên hệ ngay</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
