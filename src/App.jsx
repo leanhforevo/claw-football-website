@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const trending = [
   ['Mbappé', 'Tương lai vẫn là chủ đề nóng nhất tuần'],
